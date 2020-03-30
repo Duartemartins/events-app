@@ -1,0 +1,30 @@
+<h1> All Events </h1>
+<ul>
+	<% @events.each do |e| %>
+	<li>Event Description: <%= e.description %></li>
+	<li>Event Date: <%= e.date %></li>
+	<div> <p> </p>
+	</div>
+	<% end %>
+</ul>
+
+<h1> Upcoming </h1>
+<ul>
+	<% @upcoming_events.each do |e| %>
+	<li>Event Description: <%= e.description %></li>
+	<li>Event Date: <%= e.date %></li>
+	<div> <p> </p>
+	</div>
+	<% end %>
+</ul>
+<div>
+	</div>
+<h1> Previous Events </h1>
+<ul>
+	<% @prev_events.each do |e| %>
+	<li>Event Description: <%= e.description %></li>
+	<li>Event Date: <%= e.date %></li>
+	<div> <p> </p>
+	</div>
+	<% end %>
+</ul>
